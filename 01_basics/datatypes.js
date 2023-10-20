@@ -1,21 +1,31 @@
-let myName = "Harsh";
-// let anotherName = myName;
+// by the way of storing and accesing data  in memory we havve two types of  datatypes primitive and non primitive
 
-console.log(myName);
-// console.log(anotherName);
+// //primitive
+// all the primitive datatypes are "call by value"i.e, a copy of the original value is paseed
+// 7 types : String , Number , Boolean , null  , undefined , symbol , Bigint
 
+// js is dynamically typed language we do not need to declare the datatypes
 
+//refrence (non-primitivev)
+// arrays , object , functions
 
-//primitive 
-//7 types  Number,String, Boolean,undefined,null,bigInt,Symbol
+let name = "Harsh"
+let anotherName = name
+ anotherName = "raj"
+console.log(name)
+console.log(anotherName)
 
-//non-primitve object,array, functions
+// here a copy of the value is assigned to anotherName and changing it will not change the original value of Name 
 
-//********memorytype*/
+// for representation see excalidraw
+// https://excalidraw.com/#json=zISGtmGLa2Ucva01gKdXo,59A-KiMATtwkG_UYk1r6Aw
 
-//stack(primitive) we get a copy of the values passed
+let userOne = {
+    email:"user@google.com",
+    upi:"user@yb;"
+}
 
- //heap(non-primitive) we get the refrence of the value passed
+let userTwo = userOne;
+userTwo.email = "usertwo@google.com"
 
-
-
+console.log(userOne);
