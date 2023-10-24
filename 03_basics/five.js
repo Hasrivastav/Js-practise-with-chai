@@ -1,12 +1,12 @@
 
-// //for each it does not return any vlaue
+//for each it does not return any vlaue
 
-// // const coding = ["js", "ruby","java","js"]
-// // coding.forEach((val)=>{
-// // console.log(val)
+// const coding = ["js", "ruby","java","js"]
+// coding.forEach((val)=>{
+// console.log(val)
 // // })
 
-// const  myObject =[
+//const  myObject =[
 //    {
 //         lang:'javascript',
 //         langFile:"js"     
