@@ -21,8 +21,8 @@
 
  //**********operations********"
 
-// console.log("1"+2+2)
-// console.log(1+2+"3")
+console.log("1"+2+2)
+console.log(1+2+"3")
 
 // let x = 3;
 // const y = x++;// x is incresed to 4, but y gets the original value of x, which is 3.
@@ -39,6 +39,8 @@
 
 
 
-console.log(null >0 )
-console.log(null == 0)
-console.log(null>=0)
+// console.log(null >0 )
+// console.log(null == 0)
+// console.log(null>=0)
+
+// In JavaScript, the parseInt() function attempts to parse a string and extract an integer from the beginning of that string . It reads the string character by character until it encounters a non-numeric character or reaches the end of the string.

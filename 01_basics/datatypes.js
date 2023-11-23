@@ -9,11 +9,11 @@
 //refrence (non-primitivev)
 // arrays , object , functions
 
-let name = "Harsh"
-let anotherName = name
- anotherName = "raj"
-console.log(name)
-console.log(anotherName)
+// let name = "Harsh"
+// let anotherName = name
+//  anotherName = "raj"
+// console.log(name)
+// console.log(anotherName)
 
 // here a copy of the value is assigned to anotherName and changing it will not change the original value of Name 
 
