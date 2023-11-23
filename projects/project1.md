@@ -158,3 +158,33 @@ function endGame(){
    })
  }
 ```
+
+### project 5 changing the baxkgroud color 
+
+``` javascript 
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+
+const start = document.querySelector('#start').addEventListener('click', () => {
+  if (!intervalId) {
+    intervalId = setInterval(changeBgColor, 1000);
+  }
+
+  function changeBgColor  ()  {
+    document.body.style.backgroundColor = randomColor();
+  };
+});
+
+const stop = document.querySelector('#stop').addEventListener('click', () => {
+  clearInterval(intervalId);
+  intervalId = null;
+});
+
+```
