@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="image">
+        <img id="userImage" src="" alt="HereIsYourImage"/>
+        <h1 id="followerCount"></h1>
+    </div>
+    
+    <script>
+        // Create a new XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
+        
+        // Define the API URL to fetch user data
+        const apiUrl = 'https://api.github.com/users/hasrivastav';
+        
+        // Send a GET request to the API
+        xhr.open('GET', apiUrl, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // If the request is successful (status code 200), process the data
+                    const userData = JSON.parse(xhr.responseText);
+                    
+                    // Update the image source and follower count in the HTML
+                    document.getElementById('userImage').src = userData.avatar_url;
+                    document.getElementById('followerCount').textContent = `Followers: ${userData.followers}`;
+                } else {
+                    // Handle errors if any
+                    console.error('Error fetching user data');
+                }
+            }
+        };
+        xhr.send();
+    </script>
+</body>
+</html>
